@@ -17,6 +17,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/debug', function () {
+    return view('debug');
+});
+
 Route::get('/sendSms', function(){
+
+    $phone = str_replace("+", "", "255719123671");
+    $sms_message = "test intergration";
+
+    //dispatch job for calling a service for send sms
+
+    \App\Jobs\Notifications\SendSms::dispatch($phone, strip_tags($sms_message));
     return 'Sending sms through this route';
 });
