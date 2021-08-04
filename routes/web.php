@@ -23,7 +23,7 @@ Route::get('/debug', function () {
 
 Route::get('/sendSms', function(){
 
-    $phone = str_replace("+", "", "255719123671");
+    $phone = str_replace("+", "", "255693073832");
     $sms_message = "test intergration";
 
     //dispatch job for calling a service for send sms

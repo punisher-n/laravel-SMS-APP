@@ -1,5 +1,5 @@
 <?php
-namespace App\Services\Notifications;
+namespace App\Service\Notifications;
 
 
 use Illuminate\Support\Facades\Log;
@@ -35,7 +35,7 @@ class Sms
         $this->sender = "NEXTSMS";
 
         //add key by ignore word Basic already specified
-        $this->key = "cHVyZXNvZnQ6MTAwJUBwdXJl";
+        $this->key = "bmdhdHVuZ2E6cHVuaXNoZXIxQE5nYXR1bmdh";
 
         $this->message = $message;
 

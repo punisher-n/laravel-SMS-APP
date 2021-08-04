@@ -2,7 +2,7 @@
 
 namespace App\Jobs\Notifications;
 
-use App\Services\Notifications\Sms;
+use App\Service\Notifications\Sms;
 use Illuminate\Bus\Queueable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
