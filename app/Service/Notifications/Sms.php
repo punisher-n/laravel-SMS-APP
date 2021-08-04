@@ -31,12 +31,14 @@ class Sms
         $this->phone = $phone;
 
 
+        //add sender id
         $this->sender = "NEXTSMS";
+
+        //add key by ignore word Basic already specified
         $this->key = "cHVyZXNvZnQ6MTAwJUBwdXJl";
 
         $this->message = $message;
 
-        Log::info($this->phone);
 
     }
 
